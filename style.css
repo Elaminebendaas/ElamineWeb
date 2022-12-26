@@ -1,0 +1,150 @@
+
+        html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+
+            font-family: 'Open Sans', sans-serif;
+            color: #dcdcdc;
+            text-align: center;
+
+            background: linear-gradient(238deg, #0fa37d, #1159bd);
+            background-size: 400% 400%;
+
+            -webkit-animation: backgrade 31s ease infinite;
+            -moz-animation: backgrade 31s ease infinite;
+            animation: backgrade 31s ease infinite;
+        }
+
+        a {
+            color: #dcdcdc;
+            text-decoration: none;
+            font-weight: bold;
+            position: relative;
+        }
+
+        a:visited {
+            color: #dcdcdc;
+            text-decoration: none;
+        }
+
+        a:after {
+            content: '';
+            background: linear-gradient(90deg, rgba(0, 0, 0, 0), rgba(220, 220, 220, 100));
+            opacity: 0;
+            border-radius: 1px;
+
+            position: absolute;
+            bottom: -1.75px;
+            left: 0;
+
+            width: 0;
+            height: 1px;
+
+            transition: width 0.5s ease-in-out 0s, opacity 0.2s linear 0.2s;
+        }
+
+        a:hover:after {
+            width: 100%;
+            opacity: 1;
+
+            transition: width 0.5s ease-out, opacity 0.1s ease-out;
+        }
+
+        @-webkit-keyframes backgrade {
+            0% {
+                background-position: 49% 0
+            }
+            50% {
+                background-position: 52% 100%
+            }
+            100% {
+                background-position: 49% 0
+            }
+        }
+
+        @-moz-keyframes backgrade {
+            0% {
+                background-position: 49% 0
+            }
+            50% {
+                background-position: 52% 100%
+            }
+            100% {
+                background-position: 49% 0
+            }
+        }
+
+        @keyframes backgrade {
+            0% {
+                background-position: 49% 0
+            }
+            50% {
+                background-position: 52% 100%
+            }
+            100% {
+                background-position: 49% 0
+            }
+        }
+
+        @keyframes firstFadeDown {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes firstFadeUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        #flexDiv {
+            height: 100%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #flexItem {
+            max-width: 90%;
+            flex: none;
+        }
+
+        #flexItem h1 {
+            text-transform: uppercase;
+            font-weight: 300;
+            letter-spacing: 3px;
+
+            animation: firstFadeDown 1s ease-in-out;
+        }
+
+        #flexItem p {
+            line-height: 2;
+            letter-spacing: 1px;
+
+            animation: firstFadeUp 1s 0.5s ease-out both;
+        }
+        ul{
+            list-style: none;
+        }
+
+
+    

@@ -144,6 +144,7 @@
         }
         ul{
             list-style: none;
+            animation: firstFadeUp 1s 0.8s ease-out both;
         }
 
 
